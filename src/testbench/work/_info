@@ -1,0 +1,43 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/fetools/work_area/frontend/Batch_11/sreya/RAM_PROJECT/src/testbench
+Xram_pkg
+!s115 ram_if
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1783335852
+!i10b 1
+!s100 C;FZ`YYZ8`R07zcY2P4F02
+IeoW<4j0RHXA[=1K4f4g]30
+VeoW<4j0RHXA[=1K4f4g]30
+S1
+R0
+w1783335843
+8ram_pkg.sv
+Fram_pkg.sv
+Fram_transaction1.sv
+Fram_generator.sv
+Fdefines.sv
+Fram_driver.sv
+Fram_monitor.sv
+Fram_reference_model.sv
+Fram_scoreboard.sv
+Fram_environment.sv
+Fram_test.sv
+L0 1
+OE;L;10.6c;65
+r1
+!s85 0
+31
+!s108 1783335852.000000
+!s107 ram_test.sv|ram_environment.sv|ram_scoreboard.sv|ram_reference_model.sv|ram_monitor.sv|ram_driver.sv|defines.sv|ram_generator.sv|ram_transaction1.sv|ram_pkg.sv|
+!s90 ram_pkg.sv|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0
