@@ -41,7 +41,7 @@ endgroup
            vif.drv_cb.address<=0;
            mbx_dr.put(drv_trans);
            repeat(1) @(vif.drv_cb);          
-           $display("DRIVER DRIVING DATA TO THE INTERFACE data_in=%d,write_enb=%d,read_enb=%d,address=%d",vif.drv_cb.data_in,vif.drv_cb.write_enb,vif.drv_cb.read_enb,vif.drv_cb.address,$time);
+             $display("driver driving data to interface data_in=%d,write_enb=%d,read_enb=%d,address=%d",vif.drv_cb.data_in,vif.drv_cb.write_enb,vif.drv_cb.read_enb,vif.drv_cb.address,$time);
           end
         else
          repeat(1) @(vif.drv_cb)
@@ -51,11 +51,11 @@ endgroup
                vif.drv_cb.data_in<=drv_trans.data_in;  
                vif.drv_cb.address<=drv_trans.address;
                repeat(1) @(vif.drv_cb);
-               $display("DRIVER WRITE OPERATION DRIVING DATA TO THE INTERFACE data_in=%d,write_enb=%d,read_enb=%d,address=%d",vif.drv_cb.data_in,vif.drv_cb.write_enb,vif.drv_cb.read_enb,vif.drv_cb.address,$time); 
+             $display("driver write operation data_in=%d,write_enb=%d,read_enb=%d,address=%d",vif.drv_cb.data_in,vif.drv_cb.write_enb,vif.drv_cb.read_enb,vif.drv_cb.address,$time); 
                vif.drv_cb.write_enb<=0;
                mbx_dr.put(drv_trans);
                drv_cg.sample();
-               $display("INPUT FUNCTIONAL COVERAGE = %0d", drv_cg.get_coverage());
+             $display("ip functional coverage = %0d", drv_cg.get_coverage());
         end
      end
   endtask
