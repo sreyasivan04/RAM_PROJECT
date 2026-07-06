@@ -25,10 +25,10 @@ class ram_monitor;
               mon_trans.data_out=vif.mon_cb.data_out;
               mon_trans.address=vif.mon_cb.address;
              end
-        $display("MONITOR PASSING THE DATA TO SCOREBOARD data_out=%d",mon_trans.data_out,$time);
+          $display("monitor passing data to scoreboard data_out=%d",mon_trans.data_out,$time);
         mbx_ms.put(mon_trans);
         mon_cg.sample();
-        $display("OUTPUT FUNCTIONAL COVERAGE = %0d", mon_cg.get_coverage());
+          $display("output functional coverage = %0d", mon_cg.get_coverage());
         repeat(1) @(vif.mon_cb);
       end
   endtask
