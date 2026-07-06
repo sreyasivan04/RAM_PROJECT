@@ -13,7 +13,7 @@ class ram_generator;
       begin
         blueprint.randomize();
         mbx_gd.put(blueprint.copy());
-        $display("[%0t]GENERATOR Randomized transaction data_in=%d,write_enb=%d,read_enb=%d,address=%d",$time,blueprint.data_in,blueprint.write_enb,blueprint.read_enb,blueprint.address);
+        $display("[%0t]generator Randomized transaction data_in=%d,write_enb=%d,read_enb=%d,address=%d",$time,blueprint.data_in,blueprint.write_enb,blueprint.read_enb,blueprint.address);
       end
   endtask
 endclass
